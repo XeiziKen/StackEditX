@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "maxstack",
+  "version": "1.0.0",
+  "name": "Max Stack Mod",
+  "description": "Increases max stack size for items while keeping tools unstackable and preventing non-empty shulker boxes from stacking.",
+  "authors": [
+    "Zei"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/maxstack/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.zei.maxstack.MaxStackMod"
+    ],
+    "modmenu": [
+      "com.zei.maxstack.config.ModMenuApiImpl"
+    ]
+  },
+  "mixins": [
+    "maxstackmod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
